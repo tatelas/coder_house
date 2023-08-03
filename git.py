@@ -9,8 +9,8 @@ key_api = "AIzaSyCB6OPDrOftLyG1lVbDYDgyw1i4XEdOwys"
 youtube = build('youtube','v3', developerKey=key_api)
 
 rd = "Reydama"
-
-requests = youtube.channels().list(part='statistics', forUsername = rd)
+padel = "@Worldpadeltour"
+requests = youtube.channels().list(part='statistics', forUsername = padel)
 
 response = requests.execute()
 #print(response)
